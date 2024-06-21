@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import reactLogo from './assets/merkaba_tv.jpg'
+// import reactLogo from './assets/merkaba_insta.jpeg'
 import viteLogo from './assets/coobot_23.jpg'
 import './App.css'
 
