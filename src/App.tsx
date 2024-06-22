@@ -34,7 +34,7 @@ function App() {
         </p>
       </div>
       <p className="read-the-docs">
-        Click on the Coobot and Merkaba logos to learn more
+          Quantum intelligence using neurolinguistic programming
       </p>
     </>
   )
