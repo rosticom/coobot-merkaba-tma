@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div>
-        <a href="https://t.me/+YNom6FHqdnozM2Nh">
+        <a href="https://t.me/+JuO8mZMYOnRmN2Ux">
             <img src={viteLogo} className="logo" alt="Coobot chat" />
         </a>
         <a href="https://t.me/merkabatv">
