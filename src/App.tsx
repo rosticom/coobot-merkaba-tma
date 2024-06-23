@@ -24,14 +24,14 @@ function App() {
         </button>
         <p>
           <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-              buy coobots to become rich now
+              Please, buy coobot tokens to become rich
               {/* Transfer coobots to your wallet */}
               {/* <code>coobot coins</code>  */}
           </a>
         </p>
       </div>
       <p className="read-the-docs">
-          Quantum intelligence with neurolinguistic programming
+          You should know where the market is going or just buy some coobots
       </p>
     </>
   )
