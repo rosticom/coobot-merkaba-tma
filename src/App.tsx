@@ -16,12 +16,6 @@ function App() {
         <a href="https://t.me/merkabatv">
             <img src={reactLogo} className="logo" alt="Merkaba TV" />
         </a>
-        {/* <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a> */}
       </div>
       <h1>Coobot + Merkaba</h1>
       <div className="card">
@@ -30,7 +24,7 @@ function App() {
         </button>
         <p>
           <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-              buy coobot coins to become rich
+              buy coobots to become rich now
               {/* Transfer coobots to your wallet */}
               {/* <code>coobot coins</code>  */}
           </a>
