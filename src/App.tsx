@@ -26,18 +26,18 @@ function App() {
       <h1>Coobot + Merkaba</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
-          coins for your wallet: {count}
+          earn coins for your wallet: {count}
         </button>
         <p>
           <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-              Buy coobot coins to become rich
+              buy coobot coins to become rich
               {/* Transfer coobots to your wallet */}
               {/* <code>coobot coins</code>  */}
           </a>
         </p>
       </div>
       <p className="read-the-docs">
-          Quantum intelligence using neurolinguistic programming
+          Quantum intelligence with neurolinguistic programming
       </p>
     </>
   )
