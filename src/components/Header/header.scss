@@ -1,26 +1,32 @@
 header {
-  display: flex;
+  // display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 25px;
+  // padding: 10px 25px;
 
   > span {
     font-size: 30px;
     line-height: 34px;
     color: rgba(102,170,238,0.91);
     font-weight: bold;
-    padding: 16px;
+    margin: 16px;
 
+  }
+
+  #wallet-connect-button-wrapper {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 32px;
   }
 }
 
-@media (max-width: 525px) {
-  header {
-    flex-direction: column;
-    gap: 10px;
+// @media (max-width: 525px) {
+//   header {
+//     flex-direction: column;
+//     gap: 10px;
 
-    > *:nth-child(2) {
-      align-self: flex-end;
-    }
-  }
-}
+//     > *:nth-child(2) {
+//       align-self: flex-end;
+//     }
+//   }
+// }
