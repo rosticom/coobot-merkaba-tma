@@ -3,8 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  /* display: flex; */
-  min-height: 90vh;
+  min-height: 88vh;
 }
 
 .logo {
