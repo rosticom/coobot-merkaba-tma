@@ -34,11 +34,12 @@ export const Header = () => {
 
     return <header>
         <div id="header-row">
-            
+            <div id="user-name">
+                {userName || "Guest"}
+            </div>
             <div id="wallet-connect-button-wrapper">
                 <TonConnectButton /> 
             </div>
-            <div id="user-name">{userName}</div>
         </div>
         {/* <TonConnectButton /> */}
         {/* <span>My App with React UI</span> */}
