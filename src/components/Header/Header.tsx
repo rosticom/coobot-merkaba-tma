@@ -34,6 +34,7 @@ export const Header = () => {
   
       console.log('Telegram WebApp object:', tg);
       console.log('User Info:', user);
+      console.log("User Picture: ", user?.photo_url);
   }, []);
 
   if (!userInfo) {
