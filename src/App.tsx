@@ -3,7 +3,7 @@
 import { THEME, TonConnectUIProvider } from "@tonconnect/ui-react";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
-import { TxForm } from "./components/TxForm/TxForm";
+// import { TxForm } from "./components/TxForm/TxForm";
 
 // import { useState } from 'react'
 // import reactLogo from './assets/merkaba_tv.jpg'
@@ -59,9 +59,9 @@ function App() {
       }}
     >
       <div className="app">
-        <Header />
+        <Header /> 
         {/* <TxForm /> */}
-        {/*<TonProofDemo />*/}
+        {/* <TonProofDemo /> */}
 
         <div>
           <a href="https://t.me/+JuO8mZMYOnRmN2Ux">

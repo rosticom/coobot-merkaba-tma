@@ -1,4 +1,5 @@
-// import {BorderRadius, Locales, ReturnStrategy, Theme, THEME, useTonConnectUI} from "@tonconnect/ui-react";
+// import {Locales, ReturnStrategy, Theme, THEME, useTonConnectUI} from "@tonconnect/ui-react";
+// import {BorderRadius} from "@tonconnect/ui-react";
 import {useTonConnectUI} from "@tonconnect/ui-react";
 import './footer.scss';
 // import {useEffect, useState} from "react";
@@ -29,7 +30,9 @@ export const Footer = () => {
     //     setOptions({uiPreferences: {borderRadius: borders as BorderRadius}})
     // }
 
-    setOptions({uiPreferences: {borderRadius: 's'}}) // or 'm'
+    setOptions({uiPreferences: {borderRadius: 'm'}}) // or 's'
+
+    // console.log("hi!");
 
     // const onCheckboxChange = (position: number) => {
     //     setCheckboxes(state => state.map((item, index) => index === position ? !item : item ));
