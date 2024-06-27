@@ -1,42 +1,64 @@
 import { TonConnectButton } from "@tonconnect/ui-react";
 import './header.scss';
-import { Telegram } from "@twa-dev/types";
+import { useEffect, useState } from 'react';
+import { telegramWebAppMock } from '../../test/telegramWebAppMock';
+import { TelegramWebApp } from '../../telegramTypes';
 
-declare global {
-    interface Window {
-      Telegram: Telegram;
-    }
-  }
-
-  import { useEffect, useState } from 'react';
-
-// const TelegramUserInfo = () => {
-// }
+interface UserInfo {
+  id: number;
+  first_name: string;
+  last_name?: string;
+  username?: string;
+  language_code?: string;
+  photo_url?: string;
+}
 
 export const Header = () => {
-  const [userName, setUserName] = useState('');
+  const [userInfo, setUserInfo] = useState<UserInfo | null>(null);
 
   useEffect(() => {
-    const tg = window.Telegram.WebApp;
-
-    if (tg) {
-      tg.ready();
-      const user = tg.initDataUnsafe.user;
-      if (user) {
-        setUserName(user.first_name + (user.last_name ? ' ' + user.last_name : ''));
+    let tg: TelegramWebApp;
+      if (process.env.NODE_ENV === 'development') {
+        tg = telegramWebAppMock.WebApp;
+      } else if (window.Telegram) {
+        tg = window.Telegram.WebApp;
+      } else {
+        console.error('Telegram WebApp is not available');
+        return;
       }
-    }
-  }, []); 
-    // const userName = Telegram.WebApp.initDataUnsafe.user.id;
-    // const userName = window.Telegram.WebApp.initDataUnsafe.user?.username;
-    // window.Telegram.WebApp.HapticFeedback.notificationOccurred("success");
-    console.log("user name: ", userName);
+
+      tg.ready();
+    
+      const user = tg.initDataUnsafe.user;
+      setUserInfo(user || null);
+  
+      console.log('Telegram WebApp object:', tg);
+      console.log('User Info:', user);
+  }, []);
+
+  if (!userInfo) {
+    return <div>Loading user information...</div>;
+  }
 
     return <header>
         <div id="header-row">
             <div id="user-name">
-                {userName || "Guest"}
-            </div>
+                {/* {userInfo.photo_url && (
+                  <img 
+                    src={userInfo.photo_url} 
+                    alt={`${userInfo.first_name}'s avatar`} 
+                    style={{ width: '60px', height: '60px', borderRadius: '50%', marginRight: '20px' }}
+                  />
+                )} */}
+                <div>
+                  {userInfo.first_name} {userInfo.last_name || 'Guest'}
+                  {/* {userInfo.username && <p>@{userInfo.username}</p>} */}
+                </div>
+              </div>
+              {/* <pre style={{ backgroundColor: '#f4f4f4', padding: '10px', borderRadius: '5px' }}>
+                {JSON.stringify(userInfo, null, 2)}
+              </pre> */}
+          
             <div id="wallet-connect-button-wrapper">
                 <TonConnectButton /> 
             </div>
