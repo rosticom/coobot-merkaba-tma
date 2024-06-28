@@ -84,9 +84,9 @@ function App() {
             </a>
           </p>
         </div>
-        <p className="read-the-docs">
-        buying or selling on the crypto market? doesn't matter with quantum technology!
-        </p>
+        {/* <p className="read-the-docs">
+            buying or selling on the crypto market? doesn't matter with quantum technology!
+        </p> */}
         <TonUsdChart />
         <Footer />
       </div>
