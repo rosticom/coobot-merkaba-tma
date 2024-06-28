@@ -9,6 +9,7 @@ import { Header } from "./components/Header/Header";
 // import reactLogo from './assets/merkaba_tv.jpg'
 import viteLogo from './assets/coobot_23.jpg'
 import './App.css'
+import TonUsdChart from "./components/TonusdChart/TonusdChart";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -87,6 +88,7 @@ function App() {
         <p className="read-the-docs">
         buying or selling on the crypto market? doesn't matter with quantum technology!
         </p>
+        <TonUsdChart />
         <Footer />
       </div>
     </TonConnectUIProvider>
