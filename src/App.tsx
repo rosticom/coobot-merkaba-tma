@@ -60,7 +60,7 @@ function App() {
       }}
     >
       <div className="app">
-        <Header /> 
+        <Header />
         {/* <TxForm /> */}
         {/* <TonProofDemo /> */}
 
@@ -78,15 +78,17 @@ function App() {
           </button> */}
           <p>
             <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-              Please, buy some $COO to be rich
+              Buy $COO and chill out. Dividend payout August 1st, 2024.
+              {/* Please, buy some $COO to be rich */}
               {/* Transfer coobots to your wallet */}
               {/* <code>coobot coins</code>  */}
             </a>
           </p>
         </div>
-        {/* <p className="read-the-docs">
-            buying or selling on the crypto market? doesn't matter with quantum technology!
-        </p> */}
+        <p className="read-the-docs">
+            {/* dividend payout August 1st, 2024 */}
+            {/* buying or selling on the crypto market? doesn't matter with quantum technology! */}
+        </p>
         <TonUsdChart />
         <Footer />
       </div>
