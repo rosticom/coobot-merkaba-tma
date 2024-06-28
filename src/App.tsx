@@ -72,7 +72,6 @@ function App() {
             <img src={reactLogo} className="logo" alt="Merkaba TV" />
           </a> */}
         </div>
-        {/* <h1>Coobot + Merkaba</h1> */}
         <div className="card">
           {/* <button onClick={() => setCount((count) => count + 1)}>
             earn coins for your wallet: {count}
