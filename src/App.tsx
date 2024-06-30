@@ -10,6 +10,7 @@ import { Header } from "./components/Header/Header";
 import viteLogo from './assets/coobot_23.jpg'
 import './App.css'
 import TonUsdChart from "./components/TonusdChart/TonusdChart";
+import MarketCap from "./components/MarketCap/MarketCap";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -72,6 +73,7 @@ function App() {
             <img src={reactLogo} className="logo" alt="Merkaba TV" />
           </a> */}
         </div>
+        <MarketCap />
         <div className="card">
           {/* <button onClick={() => setCount((count) => count + 1)}>
             earn coins for your wallet: {count}
