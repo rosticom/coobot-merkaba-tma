@@ -3,7 +3,7 @@ import './Holders.scss';
 
 const holdersData = [
   {
-    avatar: './../../../../src/assets/coobot_23.jpg',
+    avatar: './../../../assets/coobot_23.jpg',
     username: 'Coobot fund',
     gravity: 1.00,
     profit: '+23.78',
@@ -11,7 +11,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: './../../../../src/assets/yula_g.jpg',
+    avatar: './../../../assets/yula_g.jpg',
     username: 'Юлия Geraldina',
     gravity: 1.00,
     profit: '+2.85',
@@ -19,7 +19,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: './../../../../src/assets/veronika.jpg',
+    avatar: './../../../assets/veronika.jpg',
     username: 'Veronika Alex',
     gravity: 1.00,
     profit: '+2.49',
@@ -27,7 +27,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: './../../../../src/assets/theclash.jpg',
+    avatar: './../../../assets/theclash.jpg',
     username: 'Pavel | theclash',
     gravity: 1.00,
     profit: '+2.46',
@@ -35,7 +35,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: './../../../../src/assets/rost.jpg',
+    avatar: './../../../assets/rost.jpg',
     username: 'Rost G.',
     gravity: 1.00,
     profit: '+1.71',
@@ -43,7 +43,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: './../../../../src/assets/pep.png',
+    avatar: './../../../assets/pep.png',
     username: 'fOgTgc',
     gravity: 1.00,
     profit: '+1.68',
