@@ -1,6 +1,6 @@
 import './Holders.scss';
 
-function Holders({ // THIS ITEM IS DEFAULT (ITEMS LIST IN HOLDERSLIST.TSX)
+function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
   avatar = './assets/coobot_23.jpg',
   username = 'Coobot fund', 
   gravity = 0, 
