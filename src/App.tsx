@@ -11,6 +11,7 @@ import viteLogo from './assets/coobot_23.jpg'
 import './App.css'
 import TonUsdChart from "./components/TonusdChart/TonusdChart";
 import MarketCap from "./components/MarketCap/MarketCap";
+import HoldersList from "./components/HoldersList/HoldersList";
 
 function App() {
   // const [count, setCount] = useState(0)
@@ -74,23 +75,24 @@ function App() {
           </a> */}
         </div>
         <MarketCap />
+        <HoldersList />
         <div className="card">
           {/* <button onClick={() => setCount((count) => count + 1)}>
-            earn coins for your wallet: {count}
+            earn coins for your wallet: {count} money transfer
           </button> */}
-          <p>
+          <p> 
             <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-              Buy $COO and chill out. Dividend payout August 1st, 2024.
+              Buy $COO and chill out. Dividend payout on September 1st, 2024.
               {/* Please, buy some $COO to be rich */}
               {/* Transfer coobots to your wallet */}
               {/* <code>coobot coins</code>  */}
             </a>
           </p>
         </div>
-        <p className="read-the-docs">
+        {/* <p className="read-the-docs"> */}
             {/* dividend payout August 1st, 2024 */}
             {/* buying or selling on the crypto market? doesn't matter with quantum technology! */}
-        </p>
+        {/* </p> */}
         <TonUsdChart />
         <Footer />
       </div>
