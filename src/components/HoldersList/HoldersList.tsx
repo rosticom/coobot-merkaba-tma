@@ -11,7 +11,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: './yula_g.jpg',
+    avatar: 'yula_g.jpg',
     username: 'Юлия Geraldina',
     gravity: 1.00,
     profit: '+2.85',
@@ -19,7 +19,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: './images/veronika.jpg',
+    avatar: 'veronika.jpg',
     username: 'Veronika Alex',
     gravity: 1.00,
     profit: '+2.49',
@@ -27,7 +27,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: 'images/theclash.jpg',
+    avatar: 'theclash.jpg',
     username: 'Pavel | theclash',
     gravity: 1.00,
     profit: '+2.46',
@@ -35,7 +35,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: './assets/rost.jpg',
+    avatar: 'rost.jpg',
     username: 'Rost G.',
     gravity: 1.00,
     profit: '+1.71',
@@ -43,7 +43,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: '/images/pep.png',
+    avatar: 'pep.png',
     username: 'fOgTgc',
     gravity: 1.00,
     profit: '+1.68',
