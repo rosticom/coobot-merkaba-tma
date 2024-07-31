@@ -1,12 +1,13 @@
 import './Holders.scss';
 
 function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
-  avatar = './assets/coobot_23.jpg',
+  avatar = './images/coobot_23.jpg',
   username = 'Coobot fund', 
   gravity = 0, 
   profit = '-', 
   volume = 0,
 }) {
+  // const imageUrl = process.env.PUBLIC_URL + avatar;
   return (
     <div className="holders-item">
       <img src={avatar} alt={username} className="avatar" />

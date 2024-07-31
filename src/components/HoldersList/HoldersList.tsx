@@ -3,7 +3,7 @@ import './Holders.scss';
 
 const holdersData = [
   {
-    avatar: require('./assets/coobot_23.jpg'),
+    avatar: 'coobot_23.jpg',
     username: 'Coobot fund',
     gravity: 1.00,
     profit: '+23.78',
@@ -11,7 +11,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: require('./assets/yula_g.jpg'),
+    avatar: './yula_g.jpg',
     username: 'Юлия Geraldina',
     gravity: 1.00,
     profit: '+2.85',
@@ -19,7 +19,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: require('./assets/veronika.jpg'),
+    avatar: './images/veronika.jpg',
     username: 'Veronika Alex',
     gravity: 1.00,
     profit: '+2.49',
@@ -27,7 +27,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: require('./assets/theclash.jpg'),
+    avatar: 'images/theclash.jpg',
     username: 'Pavel | theclash',
     gravity: 1.00,
     profit: '+2.46',
@@ -35,7 +35,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: require('./assets/rost.jpg'),
+    avatar: './assets/rost.jpg',
     username: 'Rost G.',
     gravity: 1.00,
     profit: '+1.71',
@@ -43,7 +43,7 @@ const holdersData = [
     price: 2000000
   },
   {
-    avatar: require('./assets/pep.png'),
+    avatar: '/images/pep.png',
     username: 'fOgTgc',
     gravity: 1.00,
     profit: '+1.68',
