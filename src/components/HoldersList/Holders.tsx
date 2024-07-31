@@ -1,7 +1,7 @@
 import './Holders.scss';
 
 function Holders({ // THIS ITEM IS DEFAULT (ITEMS LIST IN HOLDERSLIST.TSX)
-  avatar = './../../../../src/assets/coobot_23.jpg',
+  avatar = './assets/coobot_23.jpg',
   username = 'Coobot fund', 
   gravity = 0, 
   profit = '-', 
