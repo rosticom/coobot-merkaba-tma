@@ -79,7 +79,8 @@
     font-size: 12px;
     // font-weight: thin;
     // color: #333;
-    color: #f0f0f0;
+    // color: #f0f0f0;
+    color: grey;
     // background-color: black;
     margin-bottom: 8px;
     margin-left: 12px;
@@ -107,4 +108,9 @@
   /* Для последнего элемента убираем линию */
   .holders-item:last-child::before {
     display: none;
+  }
+
+  .delta {
+    font-size: 8px;
+    color: grey;
   }

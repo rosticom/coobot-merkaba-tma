@@ -6,6 +6,7 @@ function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
   gravity = 0, 
   profit = '-', 
   volume = 0,
+  delta = '+0.00'
 }) {
   // const imageUrl = process.env.PUBLIC_URL + avatar;
   return (
@@ -20,6 +21,7 @@ function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
         <div className="second_row">
           <div className="profit">{profit} USDT</div>
           <div className="gravity">{gravity} %</div>
+          {/* <div className="delta">{delta}</div> */}
         </div>
         {/* <div className="divider"></div> */}
         {/* <span>{amount} TON</span> */}
