@@ -16,7 +16,7 @@
     flex: 1;
   }
 
-  .first_row, .second_row {
+  .first_row, .second_row, .left_side {
     justify-content: space-between;
     display: flex;
   }
@@ -111,6 +111,8 @@
   }
 
   .delta {
-    font-size: 8px;
+    font-size: 9px;
     color: grey;
+    padding-left: 2px;
+    padding-top: 1px;
   }

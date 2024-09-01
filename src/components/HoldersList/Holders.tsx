@@ -19,9 +19,11 @@ function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
           <div className="volume">{volume}M $COO</div>
         </div>
         <div className="second_row">
-          <div className="profit">{profit} USDT</div>
+          <div className="left_side">
+            <div className="profit">{profit} {profit != "< 1 MONTH" ? "USDT" : ""}</div>
+            <div className="delta">{delta}</div>
+          </div>
           <div className="gravity">{gravity} %</div>
-          {/* <div className="delta">{delta}</div> */}
         </div>
         {/* <div className="divider"></div> */}
         {/* <span>{amount} TON</span> */}

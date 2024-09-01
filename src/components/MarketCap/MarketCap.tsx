@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 // import { useState, useEffect } from 'react';
 // import axios from 'axios';
+import './MarketCap.scss';
 
 const MarketCap = () => {
   // const [data, setData] = useState(null);
@@ -34,7 +35,11 @@ const MarketCap = () => {
   return (
     <div>
       {/* <h2>{data ? 'Capital ⋅ ' + JSON.stringify(data): 'Capital ⋅ $COO'}</h2> */}
-      <h2>{'$COO ⋅ 98M'}</h2>
+      {/* 98M 1st august 70/2 = 35*/} 
+      {/* 129.2M 1st september 35/2 = 17.5*/}
+      <h2 className="capitalization">{'$COO ⋅ 129.2M'} 
+        <div className='plus_cap'>+31.2</div>
+      </h2> 
       {/* {data ? <p>Saved data: {JSON.stringify(data)}</p> : <p>Loading...</p>} */}
       {/* <button onClick={() => saveData({ market_cap: '$3,666.69' })}>Save New Data</button> */}
     </div>

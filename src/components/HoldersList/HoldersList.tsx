@@ -1,6 +1,9 @@
 import Holders from './Holders';
 import './Holders.scss'; 
 
+// august 0,35
+// september 0,175
+
 const holdersData = [
   {
     avatar: 'coobot_23.jpg',
@@ -8,7 +11,23 @@ const holdersData = [
     gravity: 1.00,
     profit: '23.78',
     volume: 66.6,
-    delta: '+0.00'
+    delta: '+9.02'
+  },
+  {
+    avatar: 'luchick7.jpg',
+    username: 'Loochick7',
+    gravity: 1.00,
+    profit: '< 1 MONTH',
+    volume: 21.1,
+    delta: '+2.85'
+  },
+  {
+    avatar: 'rost.jpg',
+    username: 'Rost G.',
+    gravity: 1.00,
+    profit: '1.71',
+    volume: 15,
+    delta: '+2.03'
   },
   {
     avatar: 'yula_g.jpg',
@@ -16,7 +35,7 @@ const holdersData = [
     gravity: 1.00,
     profit: '2.85',
     volume: 8,
-    delta: '+0.00'
+    delta: '+1.08'
   },
   {
     avatar: 'veronika.jpg',
@@ -24,23 +43,15 @@ const holdersData = [
     gravity: 1.00,
     profit: '2.49',
     volume: 7,
-    delta: '+0.00'
+    delta: '+0.94'
   },
   {
-    avatar: 'theclash.jpg',
-    username: 'Pavel | theclash',
+    avatar: 'pep.png',
+    username: 'igorvav',
     gravity: 1.00,
-    profit: '2.46',
-    volume: 6.9,
-    delta: '+0.00'
-  },
-  {
-    avatar: 'rost.jpg',
-    username: 'Rost G.',
-    gravity: 1.00,
-    profit: '1.71',
-    volume: 4.8,
-    price: '+0.00'
+    profit: '< 1 MONTH',
+    volume: 6.8,
+    delta: '+0.92'
   },
   {
     avatar: 'pep.png',
@@ -48,7 +59,7 @@ const holdersData = [
     gravity: 1.00,
     profit: '1.68',
     volume: 4.7,
-    delta: '+0.00'
+    delta: '+0.63'
   }
 ];
 
