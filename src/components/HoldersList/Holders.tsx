@@ -2,7 +2,7 @@ import './Holders.scss';
 
 function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
   avatar = './images/coobot_23.jpg',
-  username = 'Coobot fund', 
+  username = '$COO STAKING', 
   gravity = 0, 
   profit = '-', 
   volume = 0,

@@ -82,7 +82,7 @@ function App() {
           </button> */}
           <p> 
             <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-              Buy $COO and chill out. Dividend payout on October 1st, 2024.
+              Buy $COO and chill out until November 1st, 2024.
               {/* Please, buy some $COO to be rich */}
               {/* Transfer coobots to your wallet */}
               {/* <code>coobot coins</code>  */}
