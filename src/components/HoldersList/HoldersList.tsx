@@ -97,7 +97,7 @@ const holdersData = [
     avatar: 'pep.png',
     username: 'Etienne',
     gravity: 1.00,
-    profit: '1.68',
+    profit: '< 1 MONTH',
     volume: 3.2,
     delta: '+0.28'
   },
@@ -105,7 +105,7 @@ const holdersData = [
     avatar: 'georgiy.jpg',
     username: 'Георгий',
     gravity: 1.00,
-    profit: '1.68',
+    profit: '< 1 MONTH',
     volume: 3.1,
     delta: '+0.27'
   },
@@ -113,7 +113,7 @@ const holdersData = [
     avatar: 'pep.png',
     username: 'Felyang',
     gravity: 1.00,
-    profit: '1.68',
+    profit: '< 1 MONTH',
     volume: 2.3,
     delta: '+0.20'
   },
@@ -121,7 +121,7 @@ const holdersData = [
     avatar: 'maria.jpg',
     username: 'Мария',
     gravity: 1.00,
-    profit: '1.68',
+    profit: '< 1 MONTH',
     volume: 2.3,
     delta: '+0.20'
   },
@@ -129,7 +129,7 @@ const holdersData = [
     avatar: 'alex.jpg',
     username: 'Alex',
     gravity: 1.00,
-    profit: '1.68',
+    profit: '< 1 MONTH',
     volume: 2.1,
     delta: '+0.18'
   },
