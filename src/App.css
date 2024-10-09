@@ -1,14 +1,14 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   min-height: 88vh;
 }
 
 .logo {
-  height: 90px;
-  /* padding: 1.5em; */
+  height: 5em;
+  margin-top: 1em;
   will-change: filter;
   transition: filter 300ms;
   border-radius: 50%;
@@ -21,7 +21,7 @@
 }
 
 .logo_app {
-  height: 90px;
+  height: 5em;
   padding-left: 1.5em;
   padding-right: 1.5em;
   will-change: filter;

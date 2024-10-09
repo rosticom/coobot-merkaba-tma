@@ -147,7 +147,7 @@ function HoldersList() {
   }
   return (
     <div className="holders-list-container">
-      <h2>holders in the app</h2>
+      <h2>holders</h2>
       <div className="holders-list">
         {holdersData.map((holdersMap, index) => (
           <Holders key={index} {...holdersMap} />
