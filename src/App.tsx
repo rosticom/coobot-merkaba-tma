@@ -73,7 +73,7 @@ function App() {
           <a href="https://t.me/+JuO8mZMYOnRmN2Ux">
             <img src={chatLogo} className="logo" alt="Coobot chat" />
           </a>
-          <a href="https://coo.topme.be">
+          <a href="https://coo.topme.be" target="_blank">
             <img src={coobotLogo} className="logo_app" alt="Coobot app" />
           </a>
           <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
