@@ -7,7 +7,10 @@ import { Header } from "./components/Header/Header";
 
 // import { useState } from 'react'
 // import reactLogo from './assets/merkaba_tv.jpg'
-import viteLogo from './assets/coobot_23.jpg'
+import buyCooImage from './assets/buy_coo_image_1.png'
+import chatLogo from './assets/coobot_23.jpg'
+import coobotLogo from './assets/coobot_logo.png'
+import gasPumbLogo from './assets/gaspump.jpg'
 import './App.css'
 import TonUsdChart from "./components/TonusdChart/TonusdChart";
 import MarketCap from "./components/MarketCap/MarketCap";
@@ -68,13 +71,23 @@ function App() {
 
         <div>
           <a href="https://t.me/+JuO8mZMYOnRmN2Ux">
-            <img src={viteLogo} className="logo" alt="Coobot chat" />
+            <img src={chatLogo} className="logo" alt="Coobot chat" />
           </a>
-          {/* <a href="https://t.me/merkabatv">
-            <img src={reactLogo} className="logo" alt="Merkaba TV" />
-          </a> */}
+          <a href="https://coo.topme.be">
+            <img src={coobotLogo} className="logo_app" alt="Coobot app" />
+          </a>
+          <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
+            <img src={gasPumbLogo} className="logo" alt="Coobot app" />
+          </a>
+ 
         </div>
         <MarketCap />
+       
+        {/* <p className="read-the-docs"> */}
+            {/* dividend payout August 1st, 2024 */}
+            {/* buying or selling on the crypto market? doesn't matter with quantum technology! */}
+        {/* </p> */}
+        <TonUsdChart />
         <HoldersList />
         <div className="card">
           {/* <button onClick={() => setCount((count) => count + 1)}>
@@ -89,11 +102,10 @@ function App() {
             </a>
           </p>
         </div>
-        {/* <p className="read-the-docs"> */}
-            {/* dividend payout August 1st, 2024 */}
-            {/* buying or selling on the crypto market? doesn't matter with quantum technology! */}
-        {/* </p> */}
-        <TonUsdChart />
+        <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
+            <img src={buyCooImage} className="logo" alt="Coobot app" />
+        </a>
+        
         <Footer />
       </div>
     </TonConnectUIProvider>
