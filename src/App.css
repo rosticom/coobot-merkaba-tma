@@ -1,45 +1,81 @@
 #root {
-  max-width: 1280px;
+  max-width: 480px;
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
   min-height: 88vh;
+  width: 100%;
 }
 
 .logo {
-  height: 5em;
-  margin-top: 1em;
+  height: 4em;
+  /* margin-top: 1em; */
   will-change: filter;
   transition: filter 300ms;
   border-radius: 50%;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.05);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
+  transform: scale(1.05);
 }
 
 .logo_app {
-  height: 5em;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
+  height: 4em;
+  /* padding-left: 1.5em;
+  padding-right: 1.5em; */
   will-change: filter;
   transition: filter 300ms;
   border-radius: 50%;
   align-self: center;
 }
+
 .logo_app:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo_app.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  transform: scale(1.05);
 }
 
-.buy_coo_image {
-  width: 93%;
-  border-radius: 10px;
+.logo_app.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  transform: scale(1.05);
 }
+
+/* .buy_logo {
+  border-radius: 50%;
+  align-self: center;
+  height: 10em;
+}
+
+.buy_logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+  transform: scale(1.05);
+}
+
+.buy_logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+  transform: scale(1.05);
+} */
+
+.card {
+  padding: 0.68em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.row_center {
+  padding-top: 1.2em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
 
 /* @keyframes logo-spin {
   from {
@@ -55,11 +91,3 @@
     animation: logo-spin infinite 20s linear;
   }
 } */
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}

@@ -1,11 +1,14 @@
 // import {Locales, ReturnStrategy, Theme, THEME, useTonConnectUI} from "@tonconnect/ui-react";
 // import {BorderRadius} from "@tonconnect/ui-react";
-import {useTonConnectUI} from "@tonconnect/ui-react";
+// import {useTonConnectUI} from "@tonconnect/ui-react";
 import './footer.scss';
 // import {useEffect, useState} from "react";
 // import {ColorsModal} from "./ColorsModal/ColorsModal";
 
 // const defaultWalletsSelectValue = '["Tonkeeper", "OpenMask"]';
+const openLink = (url: string | URL | undefined) => {
+    window.open(url, '_blank');
+};
 
 export const Footer = () => {
     // const [checkboxes, setCheckboxes] = useState(
@@ -16,7 +19,7 @@ export const Footer = () => {
     // const [skipRedirect, setSkipRedirect] = useState('ios');
 
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    const [_, setOptions] = useTonConnectUI();
+    // const [_, setOptions] = useTonConnectUI();
 
     // const onLangChange = (lang: string) => {
     //     setOptions({language: lang as Locales})
@@ -30,7 +33,7 @@ export const Footer = () => {
     //     setOptions({uiPreferences: {borderRadius: borders as BorderRadius}})
     // }
 
-    setOptions({uiPreferences: {borderRadius: 'm'}}) // or 's'
+    // setOptions({uiPreferences: {borderRadius: 'm'}}) // or 's'
 
     // console.log("hi!");
 
@@ -67,6 +70,13 @@ export const Footer = () => {
     // }, [checkboxes, setOptions])
 
     return <footer className="footer">
+              <button className="google-play-button" onClick={ () => {
+                openLink('https://play.google.com/store/apps/details?id=com.rosticom.qantb&hl=ru')
+              } }> 
+                <img src="src/assets/google_play_badge.png" alt="Google Play" />
+              </button>
+      {/* google-play-badge.png */}
+
         {/* <div>
             <label>language</label>
             <select onChange={e => onLangChange(e.target.value)}>

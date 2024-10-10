@@ -1,28 +1,79 @@
 .footer {
-  padding: 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
+  // padding: 20px;
+  // display: flex;
+  // gap: 20px;
+  // justify-content: flex-end;
+  // align-items: center;
+  // flex-wrap: wrap;
 
-  > div > label {
-    color: white;
-    margin-right: 5px;
-  }
+  // > div > label {
+  //   color: white;
+  //   margin-right: 5px;
+  // }
+
+  // .google-play-badge {
+  //   background-image: url('./google-play-badge.png');
+  //   // background-size: cover;
+  //   display: inline-flex;
+  //   // width: 100px;
+  //   // height: 60px;
+  //   border: none;
+  //   cursor: pointer;
+  //   .google-play-badge img {
+  //     width: 50px;
+  //     height: auto;
+  //   }
+  // }
+  .google-play-button {
+    background-color: transparent; /* Цвет фона кнопки */
+    // background-color: wheat; /* Цвет фона кнопки */
+    border: none; /* Убираем границу */
+    display: inline-flex; /* Используем flex для выравнивания */
+    align-items: center; /* Выравнивание по вертикали */
+    // padding: 10px 20px; /* Отступы */
+    cursor: pointer; /* Курсор при наведении */
+    border-radius: 8px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: transform 0.2s, box-shadow 0.2s; /* Плавные переходы */
+    width: 180px;
 }
 
-.footer-checkbox-container {
-  display: flex;
-  flex-direction: column;
-
-  > span {
-    color: white;
-    font-weight: bold;
-    margin-bottom: 4px;
-  }
-
-  input {
-    margin-left: 3px;
-  }
+button {
+  padding: 0;
 }
+
+.google-play-button img {
+    width: 180px; /* Ширина изображения */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    // margin-right: 10px; /* Отступ между изображением и текстом */
+    background-size: contain;
+}
+
+.google-play-button:hover {
+    transform: scale(1.05); /* Увеличиваем кнопку при наведении */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Увеличиваем тень при наведении */
+}
+
+.google-play-button:active {
+    transform: scale(0.95); /* Уменьшаем кнопку при нажатии */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Возвращаем тень при нажатии */
+}
+
+}
+
+// .footer-checkbox-container {
+//   display: flex;
+//   flex-direction: column;
+
+//   > span {
+//     color: white;
+//     font-weight: bold;
+//     margin-bottom: 4px;
+//   }
+
+//   input {
+//     margin-left: 3px;
+//   }
+// }
+
+

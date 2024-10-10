@@ -7,9 +7,10 @@ import { Header } from "./components/Header/Header";
 
 // import { useState } from 'react'
 // import reactLogo from './assets/merkaba_tv.jpg'
-import buyCooImage from './assets/buy_coo_image_1.png'
+// import buyCooImage from './assets/buy_coo_image_1.png'
 import chatLogo from './assets/coobot_23.jpg'
-import coobotLogo from './assets/coobot_logo.png'
+import coobotLogo from './assets/148_148.png'
+import coobotAndroidLogo from './assets/232_232.png'
 import gasPumbLogo from './assets/gaspump.jpg'
 import './App.css'
 import TonUsdChart from "./components/TonusdChart/TonusdChart";
@@ -71,9 +72,12 @@ function App() {
         {/* <TxForm /> */}
         {/* <TonProofDemo /> */}
 
-        <div>
+        <div className = "row_center">
           <a href="https://t.me/+JuO8mZMYOnRmN2Ux">
             <img src={chatLogo} className="logo" alt="Coobot chat" />
+          </a>
+          <a onClick={() => openLink('https://play.google.com/store/apps/details?id=com.rosticom.qantb&hl=ru')}>
+            <img src={coobotAndroidLogo} className="logo_app" alt="Coobot app" />
           </a>
           <a onClick={() => openLink('https://coo.topme.be')}>
             <img src={coobotLogo} className="logo_app" alt="Coobot app" />
@@ -95,18 +99,18 @@ function App() {
           {/* <button onClick={() => setCount((count) => count + 1)}>
             earn coins for your wallet: {count} money transfer
           </button> */}
-          <p> 
+          {/* <p> 
             <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-              Buy $COO and chill out until November 1st, 2024.
+              Buy $COO and chill out until November 1st, 2024. */}
               {/* Please, buy some $COO to be rich */}
               {/* Transfer coobots to your wallet */}
               {/* <code>coobot coins</code>  */}
-            </a>
-          </p>
+            {/* </a>
+          </p> */}
         </div>
-        <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-            <img src={buyCooImage} className="logo" alt="Coobot app" />
-        </a>
+        {/* <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
+            <img src={buyCooImage} className="buy_logo" alt="Coobot app" />
+        </a> */}
         
         <Footer />
       </div>
