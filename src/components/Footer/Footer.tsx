@@ -2,6 +2,7 @@
 // import {BorderRadius} from "@tonconnect/ui-react";
 // import {useTonConnectUI} from "@tonconnect/ui-react";
 import './footer.scss';
+import googlePlayBudge from "../../assets/google_play_badge.png";
 // import {useEffect, useState} from "react";
 // import {ColorsModal} from "./ColorsModal/ColorsModal";
 
@@ -73,7 +74,7 @@ export const Footer = () => {
               <button className="google-play-button" onClick={ () => {
                 openLink('https://play.google.com/store/apps/details?id=com.rosticom.qantb&hl=ru')
               } }> 
-                <img src="src/assets/google_play_badge.png" alt="Google Play" />
+                <img src={googlePlayBudge} alt="Google Play" />
               </button>
       {/* google-play-badge.png */}
 
