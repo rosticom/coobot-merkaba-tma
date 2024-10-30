@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import moment, { duration } from 'moment';
+import moment from 'moment';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title } from 'chart.js';
 
@@ -53,13 +53,10 @@ const TonUsdChart = () => {
   const options = {
     responsive: true,
     animation: {
-      duration: 1000,
-      easing: 'easeInOutQuad', 
+      duration: 500,
     },
     plugins: {
-      legend: {
-        // position: 'top',
-      },
+      legend: {},
       title: {
         display: true,
         text: 'TON/USD Exchange Rate (Last 120 Days)',
