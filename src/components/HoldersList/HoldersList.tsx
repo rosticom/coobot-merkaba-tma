@@ -7,11 +7,19 @@ import './Holders.scss';
 const holdersData = [
   {
     avatar: 'coobot_icon.jpg',
-    username: 'Coobot',
+    username: 'QIC FUND',
     gravity: 1.00,
     profit: '32.8',
     volume: 66.6,
     delta: '+2.08'
+  },
+  {
+    avatar: 'coobot_23.jpg',
+    username: 'QIC MARKET',
+    gravity: 1.00,
+    profit: '0.00',
+    volume: 0.00,
+    delta: '+0'
   },
   {
     avatar: 'pep.png',

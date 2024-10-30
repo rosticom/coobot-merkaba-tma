@@ -72,21 +72,8 @@ function App() {
         {/* <TxForm /> */}
         {/* <TonProofDemo /> */}
 
-        <div className = "row_center">
-          <a href="https://t.me/+JuO8mZMYOnRmN2Ux">
-            <img src={chatLogo} className="logo" alt="Coobot chat" />
-          </a>
-          <a onClick={() => openLink('https://play.google.com/store/apps/details?id=com.rosticom.qantb&hl=ru')}>
-            <img src={coobotAndroidLogo} className="logo_app" alt="Coobot app" />
-          </a>
-          <a onClick={() => openLink('https://coo.topme.be')}>
-            <img src={coobotLogo} className="logo_app" alt="Coobot app" />
-          </a>
-          <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
-            <img src={gasPumbLogo} className="logo" alt="Coobot app" />
-          </a>
- 
-        </div>
+        {/* <br /> */}
+
         <MarketCap />
        
         {/* <p className="read-the-docs"> */}
@@ -94,6 +81,30 @@ function App() {
             {/* buying or selling on the crypto market? doesn't matter with quantum technology! */}
         {/* </p> */}
         <TonUsdChart />
+        <br />
+        <div className = "row_center">
+          <a href="https://t.me/+JuO8mZMYOnRmN2Ux">
+            <img src={chatLogo} className="logo" alt="Coobot chat" />
+            <div className="logo_text">Telegram</div>
+          </a>
+          <a className="logo_group" onClick={() => openLink('https://play.google.com/store/apps/details?id=com.rosticom.qantb&hl=ru')}>
+            <img src={coobotAndroidLogo} className="logo" alt="Coobot app" />
+            <div className="logo_text">Android</div>
+          </a>
+          <a className="logo_group" onClick={() => openLink('https://coo.topme.be')}>
+            <img src={coobotLogo} className="logo" alt="Coobot app" />
+            <div className="logo_text">iOS WEB</div>
+          </a>
+          <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
+            <img src={gasPumbLogo} className="logo" alt="Coobot app" />
+            <div className="logo_text">$COO</div>
+          </a>
+          <a className="logo_group" href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFDWWdid3JvUDZJRmFUS0lOMENoSmpzVnpxdDJxSGdhT1BhdGJMdS1wTWRRWVhCIn0">
+            <img src={gasPumbLogo} className="logo" alt="Coobot app" />
+            <div className="logo_text">$COOS</div>
+          </a>
+ 
+        </div>
         <HoldersList />
         <div className="card">
           {/* <button onClick={() => setCount((count) => count + 1)}>

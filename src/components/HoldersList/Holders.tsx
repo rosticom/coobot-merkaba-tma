@@ -9,6 +9,7 @@ function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
   delta = '+0.00'
 }) {
   // const imageUrl = process.env.PUBLIC_URL + avatar;
+  
   return (
     <div className="holders-item">
       <img src={avatar} alt={username} className="avatar" />
@@ -16,7 +17,7 @@ function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
         {/* <a href={`/${username}`} className="username">{username}</a> */}
         <div className="first_row">
           <div className="username">{username}</div>
-          <div className="volume">{volume}M $COO</div>
+          <div className="volume">{volume}M ${username == 'QIC MARKET' ? "COOS" : "COO"}</div>
         </div>
         <div className="second_row">
           <div className="left_side">

@@ -44,13 +44,14 @@ export const Header = () => {
     return <header>
         <div id="header-row">
             <div id="user-name">
-                {/* {userInfo.photo_url && (
+                {userInfo.photo_url && (
                   <img 
                     src={userInfo.photo_url} 
                     alt={`${userInfo.first_name}'s avatar`} 
-                    style={{ width: '60px', height: '60px', borderRadius: '50%', marginRight: '20px' }}
+                    // style={{ width: '50px', height: '50px', borderRadius: '50%', marginRight: '20px' }}
+                    style={{ width: '50px', height: '50px', borderRadius: '50%' }}
                   />
-                )} */}
+                )}
                 <div>
                   {userInfo.first_name} {userInfo.last_name || 'Guest'}
                   {/* {userInfo.username && <p>@{userInfo.username}</p>} */}
@@ -64,6 +65,7 @@ export const Header = () => {
                 <TonConnectButton /> 
             </div>
         </div>
+        <h1>Quantum Intelligence Coin Staking</h1>
         {/* <TonConnectButton /> */}
         {/* <span>My App with React UI</span> */}
         {/* <span>Coobot</span> */}
