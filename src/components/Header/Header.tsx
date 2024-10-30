@@ -42,6 +42,10 @@ export const Header = () => {
   }
 
     return <header>
+            <div>
+        <pre>{JSON.stringify(userInfo, null, 2)}</pre>
+        {/* Остальная часть вашего компонента */}
+    </div>
         <div id="header-row">
             <div id="user-name">
                 {userInfo.photo_url && (
@@ -71,4 +75,5 @@ export const Header = () => {
         {/* <span>Coobot</span> */}
         {/* <TonConnectButton /> */}
     </header>
+    
 }
