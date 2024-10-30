@@ -42,15 +42,11 @@ export const Header = () => {
   }
 
     return <header>
-            <div>
-        <pre>{JSON.stringify(userInfo, null, 2)}</pre>
-        {/* Остальная часть вашего компонента */}
-    </div>
         <div id="header-row">
             <div id="user-name">
                 {userInfo.photo_url && (
                   <img 
-                    src={userInfo.photo_url} 
+                    src={userInfo.photo_url} // только для крупных рекламодателей https://qna.habr.com/q/1354524
                     alt={`${userInfo.first_name}'s avatar`} 
                     // style={{ width: '50px', height: '50px', borderRadius: '50%', marginRight: '20px' }}
                     style={{ width: '50px', height: '50px', borderRadius: '50%' }}

@@ -1,3 +1,28 @@
+// tg.ThemeParams.bg_color
+// tg.ThemeParams.text_color
+// tg.ThemeParams.hint_color
+// tg.ThemeParams.link_color
+// tg.ThemeParams.button_color
+// tg.ThemeParams.button_text_colorString
+
+// Но будьте осторожны, цвета - необязательный параметр, поэтому стоит проверять, есть ли они, перед тем как использовать.
+
+// Также имеется обработчик события изменения цветовой схемы:
+
+// Telegram.WebApp.onEvent(themeChanged, function(){});
+
+// Web App User
+// И еще информация о пользователе, мы можем разобрать строку tg.initData или использовать tg.initDataUnsafe объект:
+
+// tg.initDataUnsafe.user.id // уникальный идентификатор пользователя
+// tg.initDataUnsafe.user.isBot // бот ли пользователь (true/false)
+// tg.initDataUnsafe.user.first_name // имя пользователя
+// tg.initDataUnsafe.user.last_name // "фамилия" пользователя
+// tg.initDataUnsafe.user.username // username пользователя
+// tg.initDataUnsafe.user.language_code // код языка пользователя
+
+// аватарка в TWA доступна только для крупных рекламодателей https://qna.habr.com/q/1354524
+
 // import './App.scss';
 // import './trackers';
 import { THEME, TonConnectUIProvider } from "@tonconnect/ui-react";
@@ -19,9 +44,11 @@ import HoldersList from "./components/HoldersList/HoldersList";
 
 function App() {
   // const [count, setCount] = useState(0)
+  const currentTheme = THEME.DARK;
   const openLink = (url: string | URL | undefined) => {
     window.open(url, '_blank');
   };
+  const textColor = currentTheme === THEME.DARK ? 'white' : 'black';
   return (
     <TonConnectUIProvider
       manifestUrl="https://rosticom.github.io/coobot-merkaba-tma/tonconnect-manifest.json"
@@ -85,23 +112,23 @@ function App() {
         <div className = "row_center">
           <a href="https://t.me/+JuO8mZMYOnRmN2Ux">
             <img src={chatLogo} className="logo" alt="Coobot chat" />
-            <div className="logo_text">Telegram</div>
+            <div className="logo_text" color={textColor}>Telegram</div>
           </a>
           <a className="logo_group" onClick={() => openLink('https://play.google.com/store/apps/details?id=com.rosticom.qantb&hl=ru')}>
             <img src={coobotAndroidLogo} className="logo" alt="Coobot app" />
-            <div className="logo_text">Android</div>
+            <div className="logo_text" color={textColor}>Android</div>
           </a>
           <a className="logo_group" onClick={() => openLink('https://coo.topme.be')}>
             <img src={coobotLogo} className="logo" alt="Coobot app" />
-            <div className="logo_text">iOS WEB</div>
+            <div className="logo_text" color={textColor}>iOS WEB</div>
           </a>
           <a href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFEZGlyd3l5YXNST2tvUnc5bUJCekJkUUhjYUFjOUV5OFpoak1TdXRkdHJmU2M1In0">
             <img src={gasPumbLogo} className="logo" alt="Coobot app" />
-            <div className="logo_text">$COO</div>
+            <div className="logo_text" color={textColor}>$COO</div>
           </a>
           <a className="logo_group" href="https://t.me/gasPump_bot/app?startapp=eyJyZWZfdXNlcl9pZCI6NTY1ODY0MzE4LCJ0b2tlbl9hZGRyZXNzIjoiRVFDWWdid3JvUDZJRmFUS0lOMENoSmpzVnpxdDJxSGdhT1BhdGJMdS1wTWRRWVhCIn0">
             <img src={gasPumbLogo} className="logo" alt="Coobot app" />
-            <div className="logo_text">$COOS</div>
+            <div className="logo_text" color={textColor}>$COOS</div>
           </a>
  
         </div>

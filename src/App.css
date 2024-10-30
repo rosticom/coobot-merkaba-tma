@@ -47,7 +47,7 @@
 
 .logo_text {
   font-size: 0.8em;
-  color: grey;
+  /* color: var(--text-color-light); */
 }
 
 .logo_group {
@@ -84,7 +84,17 @@
   justify-content: space-evenly;
 }
 
+@media (prefers-color-scheme: dark) {
+  .logo_text {
+      color: white; /* Светлый цвет текста */
+  }
+}
 
+@media (prefers-color-scheme: light) {
+  .logo_text {
+      color: black; /* Светлый цвет текста */
+  }
+}
 
 /* @keyframes logo-spin {
   from {

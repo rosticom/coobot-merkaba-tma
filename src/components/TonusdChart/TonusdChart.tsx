@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import moment from 'moment';
+import moment, { duration } from 'moment';
 import { Line } from 'react-chartjs-2';
 import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title } from 'chart.js';
 
@@ -8,21 +8,22 @@ import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement
 ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title);
 
 const TonUsdChart = () => {
+  const isDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
   const [chartData, setChartData] = useState({
     labels: [],
     datasets: [
       {
         label: 'TON/USD',
         data: [],
-        // borderColor: 'rgb(75, 192, 192)',
-        // borderColor: 'rgb(255, 255, 255)',
-        // borderColor: 'rgb(102,170,238)',
-        borderColor: 'rgb(83, 91, 242)',
-        tension: 0.1
+        borderColor: isDarkTheme ? 'rgb(255, 255, 255)' : 'rgb(83, 91, 242)',
+        tension: 0.4,
+        pointRadius: 0,
+        pointHoverRadius: 0,
       }
-    ]
+    ],
   });
-
+  // isDarkTheme ? 'rgb(255, 255, 255)' : 'rgb(83, 91, 242)',
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios(
@@ -31,7 +32,7 @@ const TonUsdChart = () => {
 
       const prices = result.data.prices;
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      const labels = prices.map((price: any[]) => moment(price[0]).format('DD/MM/YYYY'));
+      const labels = prices.map((price: any[]) => moment(price[0]).format('DD/MM'));
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const data = prices.map((price: any[]) => price[1]);
 
@@ -51,6 +52,10 @@ const TonUsdChart = () => {
 
   const options = {
     responsive: true,
+    animation: {
+      duration: 1000,
+      easing: 'easeInOutQuad', 
+    },
     plugins: {
       legend: {
         // position: 'top',
