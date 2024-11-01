@@ -44,19 +44,19 @@ export const Header = () => {
     return <header>
         <div id="header-row">
             <div id="user-name">
-                {userInfo.photo_url && (
+                {/* {userInfo.photo_url && (
                   <img 
                     src={userInfo.photo_url} // только для крупных рекламодателей https://qna.habr.com/q/1354524
                     alt={`${userInfo.first_name}'s avatar`} 
                     // style={{ width: '50px', height: '50px', borderRadius: '50%', marginRight: '20px' }}
                     style={{ width: '50px', height: '50px', borderRadius: '50%' }}
                   />
-                )}
+                )} */}
                 <div>
-                  {userInfo.first_name} {userInfo.last_name || 'Guest'}
+                  {userInfo.first_name} {userInfo.last_name || ''}
                   {/* {userInfo.username && <p>@{userInfo.username}</p>} */}
                 </div>
-              </div>
+            </div>
               {/* <pre style={{ backgroundColor: '#f4f4f4', padding: '10px', borderRadius: '5px' }}>
                 {JSON.stringify(userInfo, null, 2)}
               </pre> */}
