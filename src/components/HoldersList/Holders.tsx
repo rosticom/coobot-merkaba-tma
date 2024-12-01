@@ -24,7 +24,7 @@ function Holders({ // ITEMS LIST IN HOLDERSLIST.TSX
             <div className="profit">{profit} {profit != "< 1 MONTH" ? "USDT" : ""}</div>
             <div className="delta">{delta}</div>
           </div>
-          <div className="gravity">{gravity} %</div>
+          <div className="gravity">{gravity}%</div>
         </div>
         {/* <div className="divider"></div> */}
         {/* <span>{amount} TON</span> */}

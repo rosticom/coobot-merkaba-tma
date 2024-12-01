@@ -9,81 +9,87 @@ const holdersData = [
     avatar: 'coobot_icon.jpg',
     username: 'QIC FUND',
     gravity: 1.00,
-    profit: '34.88',
+    profit: '42.82',
     volume: 66.6,
-    delta: '+7.94'
+    delta: '+3.94'
   },
   {
     avatar: 'coobot_23.jpg',
     username: 'QIC MARKET',
     gravity: 1.00,
     profit: '0.00',
-    volume: 0.00,
+    volume: 179,
     delta: '+0.00'
   },
   {
     avatar: 'rost.jpg',
     username: 'Rost',
     gravity: 1.00,
-    profit: '4.78',
-    volume: 78.6,
-    delta: '+9.37'
+    profit: '14.15',
+    volume: 80.4,
+    delta: '+4.76'
   },
   {
     avatar: 'yula_g.jpg',
     username: 'Юлия',
     gravity: 1.00,
-    profit: '4.78',
+    profit: '9.57',
     volume: 40.2,
-    delta: '+4.79'
+    delta: '+2.38'
   },
   {
-    avatar: 'ksenija.jpg',
-    username: 'Ksenija',
+    avatar: 'ksenia3.jpg',
+    username: 'Ksenia',
     gravity: 1.00,
-    profit: '0.85',
+    profit: '4.11',
     volume: 27.4,
-    delta: '+3.26'
+    delta: '+1.62'
   },
   {
     avatar: 'luchick7.jpg',
     username: 'Elena',
     gravity: 1.00,
-    profit: '3.5',
+    profit: '6.01',
     volume: 21.1,
-    delta: '+2.51'
+    delta: '+1.25'
   },
   {
     avatar: 'veronika.jpg',
     username: 'Veronika',
     gravity: 1.00,
-    profit: '3.79',
+    profit: '5.49',
     volume: 14.3,
-    delta: '+1.70'
+    delta: '+0.84'
   },
   {
     avatar: 'maria.jpg',
     username: 'Мария',
     gravity: 1.00,
-    profit: '0.20',
+    profit: '1.19',
     volume: 3.3,
-    delta: '+0.99'
+    delta: '+0.19'
   },
 ];
 
 function HoldersList() {
   let overallVolume = 0;
   for (let i = 0; i < holdersData.length; i++) { // OVERALL VOLUME
-    overallVolume = overallVolume + holdersData[i].volume;
+    if (holdersData[i].username != "QIC MARKET") {
+      overallVolume = overallVolume + holdersData[i].volume;
+    }
   }
   // console.log("overallVolume: ", overallVolume);
   for (let i = 0; i < holdersData.length; i++) { // GRAVITY
-    holdersData[i].gravity = parseFloat((holdersData[i].volume / overallVolume * 100).toFixed(2));
+    if (holdersData[i].username != "QIC MARKET") {
+      holdersData[i].gravity = parseFloat((holdersData[i].volume / overallVolume * 100).toFixed(2));
+    } else {
+      holdersData[i].gravity = 100;
+    }
     // console.log("gravity: ", holdersData[i].gravity);
   }
   return (
     <div className="holders-list-container">
-      <h2>holders - 1 nov 24</h2>
+      <h2>holders - 1 dec 24</h2>
       <div className="holders-list">
         {holdersData.map((holdersMap, index) => (
           <Holders key={index} {...holdersMap} />

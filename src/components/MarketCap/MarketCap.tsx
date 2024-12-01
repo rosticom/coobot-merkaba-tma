@@ -39,9 +39,9 @@ const MarketCap = () => {
       {/* 129.2M 1st september 35/2 = 17.5*/}
       {/* 288.3M 1st october 17.5/2 = 8.75*/}
       {/* 280.3M 1st november - = 30*/}
-      <h2 className="capitalization">{'$COO ⋅ 280.3M'} 
+      <h2 className="capitalization">{'$COO ⋅ 281.6M'} 
         {/* <div className='plus_cap'>+31.2</div> */}
-        <div className='plus_cap'>-10</div>
+        <div className='plus_cap'>+1.3</div>
       </h2> 
       {/* {data ? <p>Saved data: {JSON.stringify(data)}</p> : <p>Loading...</p>} */}
       {/* <button onClick={() => saveData({ market_cap: '$3,666.69' })}>Save New Data</button> */}
